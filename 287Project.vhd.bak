@@ -1,0 +1,45 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+ 
+
+entity alu is
+port (  -- the alu connections to external circuitry:
+  A  : in  std_logic_vector(7 downto 0);   -- operand A
+  B  : in  std_logic_vector(7 downto 0);   -- operand B
+  OP : in  std_logic_vector(2 downto 0); -- opcode
+  Y  : out std_logic_vector(7 downto 0));  -- operation result
+end alu;
+
+architecture behavioral of alu is
+begin
+  case OP is  -- decode the opcode and perform the operation:
+    when "000" =>  Y <= A + B;   -- add
+    when "001" =>  Y <= A - B;   -- subtract
+    when "010" =>  Y <= A - 1;   -- decrement
+    when "011" =>  Y <= A + 1;   -- increment
+    when "100" =>  Y <= not A;   -- 1's complement
+    when "101" =>  Y <= A and B; -- bitwise AND
+    when "110" =>  Y <= A or B;  -- bitwise OR
+    when "111" =>  Y <= A xor B; -- bitwise XOR
+    when others => Y <= (others => 'X');
+  end case; 
+end behavioral;
+
+entity 287project is
+		port( in1, in2 : in  std_logic_vector(7 downto 0);
+		      inst : in std_logic_vector(2 downto 0);
+				output : out std_logic_vector(7 downto 0));
+		end 287project;
+		
+architecture behavior of 287project is
+     COMPONENT alu
+	          PORT(A,B : in std_logic_vector(7 downto 0);
+				      OP : in std_logic_vector(2 downto 0);
+						Y  : out std_logic_vector(7 downto 0));
+	  end COMPONENT
+	  
+	  begin
+	       ALU: alu PORT MAP(in1,in2,inst,output);
+	  end behavior;
