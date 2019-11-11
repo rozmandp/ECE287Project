@@ -36,15 +36,63 @@
 					"strict" : false
 				},
 				{
+					"name" : "output[8]",
+					"strict" : false
+				},
+				{
+					"name" : "output[9]",
+					"strict" : false
+				},
+				{
+					"name" : "output[10]",
+					"strict" : false
+				},
+				{
+					"name" : "output[11]",
+					"strict" : false
+				},
+				{
+					"name" : "output[12]",
+					"strict" : false
+				},
+				{
+					"name" : "output[13]",
+					"strict" : false
+				},
+				{
+					"name" : "output[14]",
+					"strict" : false
+				},
+				{
+					"name" : "output[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50MHz",
+					"strict" : false
+				},
+				{
+					"name" : "input[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clr",
+					"strict" : false
+				},
+				{
+					"name" : "le2",
+					"strict" : false
+				},
+				{
+					"name" : "le1",
+					"strict" : false
+				},
+				{
 					"name" : "inst[0]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "in1[0]",
+					"name" : "ie",
 					"strict" : false
 				},
 				{
@@ -56,59 +104,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "in2[1]",
+					"name" : "inst[3]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[1]",
+					"name" : "input[1]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[2]",
+					"name" : "input[2]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[2]",
+					"name" : "input[3]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[3]",
+					"name" : "input[4]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[3]",
+					"name" : "input[5]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[4]",
+					"name" : "input[6]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "in1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[6]",
-					"strict" : false
-				},
-				{
-					"name" : "in1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[7]",
-					"strict" : false
-				},
-				{
-					"name" : "in1[7]",
+					"name" : "input[7]",
 					"strict" : false
 				}
 			]
