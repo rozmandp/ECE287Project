@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Nov 11 17:43:04 2019
+Analysis & Synthesis Status : Successful - Tue Nov 19 15:58:53 2019
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : 287Project
 Top-level Entity Name : ECE287project
 Family : Cyclone IV E
-Total logic elements : 102
-    Total combinational functions : 76
-    Dedicated logic registers : 36
-Total registers : 36
-Total pins : 33
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 29
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 1
+Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

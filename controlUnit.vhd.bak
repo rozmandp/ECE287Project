@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+
+ENTITY controlUnit IS 
+           PORT( 
+			  clk : in std_logic;
+			  reset : in std_logic;
+			  state : out std_logic_vector(3 downto 0));
+			  end controlUnit;
+
+architecture behavior of controlUnit is
+           signal currState : std_logic_vector(3 downto 0) := "0001";
+			  begin
+			  if rising_edge(clk) then
+      if reset = '1' then
+        currState <= "0001";
+      else
+        case currState is
+          when "0001" =>
+            currState <= "0010";
+          when "0010" =>
+            currState <= "0100";
+          when "0100" =>
+            currState <= "1000";
+          when "1000" =>
+            currState <= "0001";
+          when others =>
+            currState <= "0001";
+        end case;
+      end if;
+    end if;
+  end process;
+ 
+  state <= currState;
+end Behavioral;

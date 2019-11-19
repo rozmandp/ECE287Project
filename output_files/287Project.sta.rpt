@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for 287Project
-Mon Nov 11 17:43:32 2019
+Tue Nov 19 15:59:18 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -17,43 +17,31 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   9. Slow 1200mV 85C Model Recovery Summary
  10. Slow 1200mV 85C Model Removal Summary
  11. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1200mV 85C Model Setup: 'clk_50MHz'
- 13. Slow 1200mV 85C Model Hold: 'clk_50MHz'
- 14. Slow 1200mV 85C Model Metastability Summary
- 15. Slow 1200mV 0C Model Fmax Summary
- 16. Slow 1200mV 0C Model Setup Summary
- 17. Slow 1200mV 0C Model Hold Summary
- 18. Slow 1200mV 0C Model Recovery Summary
- 19. Slow 1200mV 0C Model Removal Summary
- 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 21. Slow 1200mV 0C Model Setup: 'clk_50MHz'
- 22. Slow 1200mV 0C Model Hold: 'clk_50MHz'
- 23. Slow 1200mV 0C Model Metastability Summary
- 24. Fast 1200mV 0C Model Setup Summary
- 25. Fast 1200mV 0C Model Hold Summary
- 26. Fast 1200mV 0C Model Recovery Summary
- 27. Fast 1200mV 0C Model Removal Summary
- 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 29. Fast 1200mV 0C Model Setup: 'clk_50MHz'
- 30. Fast 1200mV 0C Model Hold: 'clk_50MHz'
- 31. Fast 1200mV 0C Model Metastability Summary
- 32. Multicorner Timing Analysis Summary
- 33. Board Trace Model Assignments
- 34. Input Transition Times
- 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
- 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
- 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
- 38. Setup Transfers
- 39. Hold Transfers
- 40. Report TCCS
- 41. Report RSKM
- 42. Unconstrained Paths Summary
- 43. Clock Status Summary
- 44. Unconstrained Input Ports
- 45. Unconstrained Output Ports
- 46. Unconstrained Input Ports
- 47. Unconstrained Output Ports
- 48. TimeQuest Timing Analyzer Messages
+ 12. Slow 1200mV 85C Model Metastability Summary
+ 13. Slow 1200mV 0C Model Fmax Summary
+ 14. Slow 1200mV 0C Model Setup Summary
+ 15. Slow 1200mV 0C Model Hold Summary
+ 16. Slow 1200mV 0C Model Recovery Summary
+ 17. Slow 1200mV 0C Model Removal Summary
+ 18. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 19. Slow 1200mV 0C Model Metastability Summary
+ 20. Fast 1200mV 0C Model Setup Summary
+ 21. Fast 1200mV 0C Model Hold Summary
+ 22. Fast 1200mV 0C Model Recovery Summary
+ 23. Fast 1200mV 0C Model Removal Summary
+ 24. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 25. Fast 1200mV 0C Model Metastability Summary
+ 26. Multicorner Timing Analysis Summary
+ 27. Board Trace Model Assignments
+ 28. Input Transition Times
+ 29. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 30. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 31. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 32. Clock Transfers
+ 33. Report TCCS
+ 34. Report RSKM
+ 35. Unconstrained Paths Summary
+ 36. TimeQuest Timing Analyzer Messages
 
 
 
@@ -99,33 +87,25 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processors 3-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
-; clk_50MHz  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_50MHz } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+----------
+; Clocks ;
+----------
+No clocks to report.
 
 
-+-------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary              ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 207.0 MHz ; 207.0 MHz       ; clk_50MHz  ;      ;
-+-----------+-----------------+------------+------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
 
 
 ----------------------------------
@@ -134,22 +114,16 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+-------------------------------------+
+---------------------------------------
 ; Slow 1200mV 85C Model Setup Summary ;
-+-----------+--------+----------------+
-; Clock     ; Slack  ; End Point TNS  ;
-+-----------+--------+----------------+
-; clk_50MHz ; -3.831 ; -56.822        ;
-+-----------+--------+----------------+
+---------------------------------------
+No paths to report.
 
 
-+------------------------------------+
+--------------------------------------
 ; Slow 1200mV 85C Model Hold Summary ;
-+-----------+-------+----------------+
-; Clock     ; Slack ; End Point TNS  ;
-+-----------+-------+----------------+
-; clk_50MHz ; 0.610 ; 0.000          ;
-+-----------+-------+----------------+
+--------------------------------------
+No paths to report.
 
 
 ------------------------------------------
@@ -164,229 +138,10 @@ No paths to report.
 No paths to report.
 
 
-+---------------------------------------------------+
+-----------------------------------------------------
 ; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
-+-----------+--------+------------------------------+
-; Clock     ; Slack  ; End Point TNS                ;
-+-----------+--------+------------------------------+
-; clk_50MHz ; -3.000 ; -67.924                      ;
-+-----------+--------+------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup: 'clk_50MHz'                                                                                                     ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                               ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; -3.831 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 5.133      ;
-; -3.780 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 5.082      ;
-; -3.728 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 5.030      ;
-; -3.683 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 5.031      ;
-; -3.677 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.979      ;
-; -3.632 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.943      ;
-; -3.632 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.980      ;
-; -3.620 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.922      ;
-; -3.603 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.905      ;
-; -3.599 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.901      ;
-; -3.595 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.897      ;
-; -3.581 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.892      ;
-; -3.572 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.874      ;
-; -3.564 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.866      ;
-; -3.562 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.864      ;
-; -3.530 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.832      ;
-; -3.529 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.831      ;
-; -3.528 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.830      ;
-; -3.524 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.826      ;
-; -3.517 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.819      ;
-; -3.511 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.822      ;
-; -3.511 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.813      ;
-; -3.510 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.821      ;
-; -3.509 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.820      ;
-; -3.508 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.819      ;
-; -3.505 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.816      ;
-; -3.505 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.816      ;
-; -3.500 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.802      ;
-; -3.496 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.798      ;
-; -3.493 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.795      ;
-; -3.492 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.794      ;
-; -3.489 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.791      ;
-; -3.479 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.781      ;
-; -3.478 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.780      ;
-; -3.473 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.775      ;
-; -3.472 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.820      ;
-; -3.461 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.763      ;
-; -3.455 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.803      ;
-; -3.451 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.799      ;
-; -3.447 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.795      ;
-; -3.444 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.746      ;
-; -3.442 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.744      ;
-; -3.438 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.740      ;
-; -3.424 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.772      ;
-; -3.421 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.732      ;
-; -3.416 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.350      ; 4.764      ;
-; -3.412 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.714      ;
-; -3.404 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.715      ;
-; -3.400 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.711      ;
-; -3.396 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.707      ;
-; -3.373 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.684      ;
-; -3.365 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.676      ;
-; -3.356 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.658      ;
-; -3.351 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.662      ;
-; -3.351 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.653      ;
-; -3.334 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.636      ;
-; -3.330 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.632      ;
-; -3.328 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.639      ;
-; -3.328 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.639      ;
-; -3.327 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.638      ;
-; -3.326 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.628      ;
-; -3.326 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.637      ;
-; -3.325 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.636      ;
-; -3.322 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.633      ;
-; -3.322 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.633      ;
-; -3.319 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.621      ;
-; -3.318 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.620      ;
-; -3.317 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.628      ;
-; -3.317 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.628      ;
-; -3.313 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.615      ;
-; -3.303 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.605      ;
-; -3.302 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.604      ;
-; -3.301 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.603      ;
-; -3.300 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.611      ;
-; -3.298 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.600      ;
-; -3.297 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.608      ;
-; -3.297 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.599      ;
-; -3.296 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.598      ;
-; -3.295 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.597      ;
-; -3.294 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.596      ;
-; -3.293 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.595      ;
-; -3.292 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.594      ;
-; -3.290 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.315      ; 4.603      ;
-; -3.289 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.315      ; 4.602      ;
-; -3.288 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.590      ;
-; -3.288 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.315      ; 4.601      ;
-; -3.287 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.315      ; 4.600      ;
-; -3.287 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.306      ; 4.591      ;
-; -3.284 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.315      ; 4.597      ;
-; -3.284 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.315      ; 4.597      ;
-; -3.282 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.584      ;
-; -3.278 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.580      ;
-; -3.278 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.580      ;
-; -3.277 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.588      ;
-; -3.271 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.573      ;
-; -3.270 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.572      ;
-; -3.266 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.577      ;
-; -3.266 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.313      ; 4.577      ;
-; -3.265 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.567      ;
-; -3.265 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.304      ; 4.567      ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Hold: 'clk_50MHz'                                                                                                     ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node                               ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; 0.610 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.131      ; 0.927      ;
-; 0.896 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.165      ;
-; 0.897 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.166      ;
-; 0.898 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.167      ;
-; 0.898 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.167      ;
-; 0.898 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.167      ;
-; 0.898 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.167      ;
-; 0.899 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.168      ;
-; 0.916 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.185      ;
-; 0.981 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.480      ; 1.647      ;
-; 1.027 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.092      ; 1.305      ;
-; 1.027 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.092      ; 1.305      ;
-; 1.027 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.092      ; 1.305      ;
-; 1.027 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.092      ; 1.305      ;
-; 1.027 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.092      ; 1.305      ;
-; 1.027 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.092      ; 1.305      ;
-; 1.172 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.131      ; 1.489      ;
-; 1.232 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.482      ; 1.900      ;
-; 1.291 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.291 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.808      ;
-; 1.309 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 1.817      ;
-; 1.309 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.309 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.826      ;
-; 1.313 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.313 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.830      ;
-; 1.334 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.334 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.331      ; 1.851      ;
-; 1.338 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.131      ; 1.655      ;
-; 1.345 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.480      ; 2.011      ;
-; 1.357 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.480      ; 2.023      ;
-; 1.363 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.632      ;
-; 1.449 ; register8:RegisterIn1|q[6]~_Duplicate_1 ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.482      ; 2.117      ;
-; 1.462 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.731      ;
-; 1.478 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.747      ;
-; 1.486 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.480      ; 2.152      ;
-; 1.497 ; register8:RegisterIn1|q[7]~_Duplicate_1 ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.480      ; 2.163      ;
-; 1.512 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.512 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.020      ;
-; 1.515 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.515 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.023      ;
-; 1.518 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.787      ;
-; 1.519 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.083      ; 1.788      ;
-; 1.543 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-; 1.543 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-; 1.543 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-; 1.543 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-; 1.543 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-; 1.543 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-; 1.543 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.322      ; 2.051      ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
+-----------------------------------------------------
+No paths to report.
 
 
 -----------------------------------------------
@@ -395,32 +150,22 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+--------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 227.07 MHz ; 227.07 MHz      ; clk_50MHz  ;      ;
-+------------+-----------------+------------+------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
 
 
-+------------------------------------+
+--------------------------------------
 ; Slow 1200mV 0C Model Setup Summary ;
-+-----------+--------+---------------+
-; Clock     ; Slack  ; End Point TNS ;
-+-----------+--------+---------------+
-; clk_50MHz ; -3.404 ; -50.195       ;
-+-----------+--------+---------------+
+--------------------------------------
+No paths to report.
 
 
-+-----------------------------------+
+-------------------------------------
 ; Slow 1200mV 0C Model Hold Summary ;
-+-----------+-------+---------------+
-; Clock     ; Slack ; End Point TNS ;
-+-----------+-------+---------------+
-; clk_50MHz ; 0.555 ; 0.000         ;
-+-----------+-------+---------------+
+-------------------------------------
+No paths to report.
 
 
 -----------------------------------------
@@ -435,229 +180,10 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------+
+----------------------------------------------------
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
-+-----------+--------+-----------------------------+
-; Clock     ; Slack  ; End Point TNS               ;
-+-----------+--------+-----------------------------+
-; clk_50MHz ; -3.000 ; -67.924                     ;
-+-----------+--------+-----------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup: 'clk_50MHz'                                                                                                      ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                               ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; -3.404 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.684      ;
-; -3.362 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.642      ;
-; -3.308 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.588      ;
-; -3.266 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.546      ;
-; -3.258 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.582      ;
-; -3.219 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.508      ;
-; -3.216 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.540      ;
-; -3.203 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.203 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.308      ;
-; -3.202 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.482      ;
-; -3.188 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.468      ;
-; -3.185 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.465      ;
-; -3.182 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.462      ;
-; -3.177 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.466      ;
-; -3.159 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.439      ;
-; -3.155 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.435      ;
-; -3.144 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.424      ;
-; -3.127 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.407      ;
-; -3.111 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.391      ;
-; -3.111 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.391      ;
-; -3.109 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.389      ;
-; -3.107 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.107 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.212      ;
-; -3.106 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.386      ;
-; -3.102 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.391      ;
-; -3.102 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.391      ;
-; -3.102 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.382      ;
-; -3.101 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.390      ;
-; -3.100 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.389      ;
-; -3.097 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.386      ;
-; -3.096 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.385      ;
-; -3.092 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.372      ;
-; -3.089 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.369      ;
-; -3.086 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.366      ;
-; -3.079 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.359      ;
-; -3.076 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.356      ;
-; -3.069 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.349      ;
-; -3.069 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.349      ;
-; -3.067 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.347      ;
-; -3.059 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.339      ;
-; -3.057 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.057 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 4.206      ;
-; -3.056 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.380      ;
-; -3.042 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.366      ;
-; -3.039 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.363      ;
-; -3.037 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.317      ;
-; -3.036 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.360      ;
-; -3.034 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.314      ;
-; -3.018 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.018 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.115      ; 4.132      ;
-; -3.017 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.306      ;
-; -3.013 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.337      ;
-; -3.009 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.325      ; 4.333      ;
-; -3.003 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.283      ;
-; -3.003 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.292      ;
-; -3.001 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.281      ;
-; -3.000 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.289      ;
-; -2.997 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.286      ;
-; -2.974 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.263      ;
-; -2.974 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.254      ;
-; -2.970 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.259      ;
-; -2.953 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.242      ;
-; -2.943 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.943 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.106      ; 4.048      ;
-; -2.942 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.281      ; 4.222      ;
-; -2.937 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.226      ;
-; -2.937 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.226      ;
-; -2.937 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.226      ;
-; -2.936 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.225      ;
-; -2.935 ; register8:RegisterIn1|q[3]~_Duplicate_1 ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.290      ; 4.224      ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Hold: 'clk_50MHz'                                                                                                      ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node                               ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; 0.555 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.121      ; 0.847      ;
-; 0.841 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.086      ;
-; 0.841 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.086      ;
-; 0.841 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.086      ;
-; 0.842 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.087      ;
-; 0.842 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.087      ;
-; 0.842 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.087      ;
-; 0.844 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.089      ;
-; 0.850 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.095      ;
-; 0.859 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 1.467      ;
-; 0.949 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.084      ; 1.204      ;
-; 0.949 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.084      ; 1.204      ;
-; 0.949 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.084      ; 1.204      ;
-; 0.949 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.084      ; 1.204      ;
-; 0.949 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.084      ; 1.204      ;
-; 0.949 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.084      ; 1.204      ;
-; 1.054 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.121      ; 1.346      ;
-; 1.094 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.439      ; 1.704      ;
-; 1.190 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 1.798      ;
-; 1.192 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 1.800      ;
-; 1.208 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.453      ;
-; 1.238 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.121      ; 1.530      ;
-; 1.269 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.269 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.757      ;
-; 1.283 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.283 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.771      ;
-; 1.284 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.284 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.772      ;
-; 1.288 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.288 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.776      ;
-; 1.299 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.544      ;
-; 1.304 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.304 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.782      ;
-; 1.305 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.305 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.317      ; 1.793      ;
-; 1.306 ; register8:RegisterIn1|q[6]~_Duplicate_1 ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.439      ; 1.916      ;
-; 1.325 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 1.933      ;
-; 1.329 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.574      ;
-; 1.347 ; register8:RegisterIn1|q[7]~_Duplicate_1 ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 1.955      ;
-; 1.358 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.603      ;
-; 1.394 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.074      ; 1.639      ;
-; 1.428 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 2.036      ;
-; 1.439 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 2.047      ;
-; 1.476 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.121      ; 1.768      ;
-; 1.480 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.480 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.958      ;
-; 1.482 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.482 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.960      ;
-; 1.498 ; register8:RegisterIn1|q[7]~_Duplicate_1 ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.437      ; 2.106      ;
-; 1.506 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.984      ;
-; 1.506 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.984      ;
-; 1.506 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.307      ; 1.984      ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
+----------------------------------------------------
+No paths to report.
 
 
 ----------------------------------------------
@@ -666,22 +192,16 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------+
+--------------------------------------
 ; Fast 1200mV 0C Model Setup Summary ;
-+-----------+--------+---------------+
-; Clock     ; Slack  ; End Point TNS ;
-+-----------+--------+---------------+
-; clk_50MHz ; -1.415 ; -19.938       ;
-+-----------+--------+---------------+
+--------------------------------------
+No paths to report.
 
 
-+-----------------------------------+
+-------------------------------------
 ; Fast 1200mV 0C Model Hold Summary ;
-+-----------+-------+---------------+
-; Clock     ; Slack ; End Point TNS ;
-+-----------+-------+---------------+
-; clk_50MHz ; 0.278 ; 0.000         ;
-+-----------+-------+---------------+
+-------------------------------------
+No paths to report.
 
 
 -----------------------------------------
@@ -696,229 +216,10 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------+
+----------------------------------------------------
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
-+-----------+--------+-----------------------------+
-; Clock     ; Slack  ; End Point TNS               ;
-+-----------+--------+-----------------------------+
-; clk_50MHz ; -3.000 ; -50.118                     ;
-+-----------+--------+-----------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup: 'clk_50MHz'                                                                                                      ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                               ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; -1.415 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.546      ;
-; -1.386 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.517      ;
-; -1.343 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.496      ;
-; -1.343 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.474      ;
-; -1.328 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.465      ;
-; -1.314 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.467      ;
-; -1.314 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.445      ;
-; -1.300 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.431      ;
-; -1.299 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.436      ;
-; -1.292 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.423      ;
-; -1.290 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.421      ;
-; -1.287 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.418      ;
-; -1.286 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.286 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.299      ;
-; -1.280 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.411      ;
-; -1.277 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.408      ;
-; -1.271 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.402      ;
-; -1.263 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.394      ;
-; -1.259 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.390      ;
-; -1.258 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.389      ;
-; -1.251 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.382      ;
-; -1.250 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.381      ;
-; -1.242 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.373      ;
-; -1.241 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.372      ;
-; -1.234 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.365      ;
-; -1.230 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.361      ;
-; -1.229 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.360      ;
-; -1.228 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.381      ;
-; -1.228 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.359      ;
-; -1.220 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.351      ;
-; -1.220 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.373      ;
-; -1.220 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.351      ;
-; -1.218 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.371      ;
-; -1.218 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.349      ;
-; -1.215 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.368      ;
-; -1.215 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.346      ;
-; -1.214 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.227      ;
-; -1.214 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.214 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.048      ; 2.249      ;
-; -1.213 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.350      ;
-; -1.213 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.344      ;
-; -1.212 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.343      ;
-; -1.205 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.358      ;
-; -1.205 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.342      ;
-; -1.203 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.340      ;
-; -1.200 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.337      ;
-; -1.199 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.032      ; 2.218      ;
-; -1.199 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.166      ; 2.352      ;
-; -1.199 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.330      ;
-; -1.190 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.327      ;
-; -1.184 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.315      ;
-; -1.184 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.321      ;
-; -1.180 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.317      ;
-; -1.169 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.306      ;
-; -1.168 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.305      ;
-; -1.165 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.302      ;
-; -1.165 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.296      ;
-; -1.157 ; register8:RegisterIn2|q[0]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.294      ;
-; -1.157 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.288      ;
-; -1.155 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.286      ;
-; -1.152 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.283      ;
-; -1.151 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.026      ; 2.164      ;
-; -1.151 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.150      ; 2.288      ;
-; -1.150 ; register8:RegisterIn1|q[1]~_Duplicate_1 ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.281      ;
-; -1.148 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.279      ;
-; -1.144 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.275      ;
-; -1.143 ; register8:RegisterIn2|q[2]              ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 1.000        ; 0.144      ; 2.274      ;
-+--------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1200mV 0C Model Hold: 'clk_50MHz'                                                                                                      ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node                               ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
-; 0.278 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.064      ; 0.426      ;
-; 0.416 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.540      ;
-; 0.416 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.540      ;
-; 0.418 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[2]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.542      ;
-; 0.419 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.543      ;
-; 0.419 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.543      ;
-; 0.419 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.543      ;
-; 0.420 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.544      ;
-; 0.430 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.554      ;
-; 0.436 ; register8:RegisterIn2|q[6]              ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 0.753      ;
-; 0.467 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.047      ; 0.598      ;
-; 0.467 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.047      ; 0.598      ;
-; 0.467 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.047      ; 0.598      ;
-; 0.467 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.047      ; 0.598      ;
-; 0.467 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[14] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.047      ; 0.598      ;
-; 0.467 ; register3:RegisterInst|q[3]             ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.047      ; 0.598      ;
-; 0.522 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.064      ; 0.670      ;
-; 0.550 ; register8:RegisterIn1|q[0]~_Duplicate_1 ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.234      ; 0.868      ;
-; 0.609 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.733      ;
-; 0.609 ; register3:RegisterInst|q[2]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.064      ; 0.757      ;
-; 0.623 ; register8:RegisterIn2|q[4]              ; alu:ALU1|output[4]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 0.940      ;
-; 0.640 ; register8:RegisterIn1|q[6]~_Duplicate_1 ; alu:ALU1|output[6]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.234      ; 0.958      ;
-; 0.642 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 0.959      ;
-; 0.658 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 0.975      ;
-; 0.664 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.788      ;
-; 0.664 ; register8:RegisterIn1|q[7]~_Duplicate_1 ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 0.981      ;
-; 0.665 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[0]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.789      ;
-; 0.679 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.803      ;
-; 0.694 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[7]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.818      ;
-; 0.696 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.696 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 0.920      ;
-; 0.707 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.707 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.938      ;
-; 0.714 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.714 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[13] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.945      ;
-; 0.715 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.715 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[11] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.946      ;
-; 0.717 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.717 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[15] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.948      ;
-; 0.718 ; register3:RegisterInst|q[1]             ; alu:ALU1|output[8]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.064      ; 0.866      ;
-; 0.725 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.725 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[10] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.147      ; 0.956      ;
-; 0.746 ; register8:RegisterIn2|q[1]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 1.063      ;
-; 0.753 ; register8:RegisterIn2|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 1.070      ;
-; 0.763 ; register8:RegisterIn2|q[7]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 1.080      ;
-; 0.779 ; register3:RegisterInst|q[0]             ; alu:ALU1|output[5]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.040      ; 0.903      ;
-; 0.790 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[9]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.233      ; 1.107      ;
-; 0.799 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.799 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[1]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.023      ;
-; 0.801 ; register8:RegisterIn1|q[0]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[1]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[2]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[3]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[4]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[5]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[6]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn1|q[7]              ; alu:ALU1|output[3]  ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.140      ; 1.025      ;
-; 0.801 ; register8:RegisterIn2|q[5]              ; alu:ALU1|output[12] ; clk_50MHz    ; clk_50MHz   ; 0.000        ; 0.240      ; 1.125      ;
-+-------+-----------------------------------------+---------------------+--------------+-------------+--------------+------------+------------+
+----------------------------------------------------
+No paths to report.
 
 
 ----------------------------------------------
@@ -927,16 +228,14 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                           ;
-+------------------+---------+-------+----------+---------+---------------------+
-; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.831  ; 0.278 ; N/A      ; N/A     ; -3.000              ;
-;  clk_50MHz       ; -3.831  ; 0.278 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -56.822 ; 0.0   ; 0.0      ; 0.0     ; -67.924             ;
-;  clk_50MHz       ; -56.822 ; 0.000 ; N/A      ; N/A     ; -67.924             ;
-+------------------+---------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -952,14 +251,6 @@ No synchronizer chains to report.
 ; output[5]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; output[6]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; output[7]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[8]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[9]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[10]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[11]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[12]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[13]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[14]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; output[15]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
@@ -970,16 +261,7 @@ No synchronizer chains to report.
 +-------------------------+--------------+-----------------+-----------------+
 ; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------------------+--------------+-----------------+-----------------+
-; clk_50MHz               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; input[0]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; clr                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; le2                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; le1                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; inst[0]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ie                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; inst[1]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; inst[2]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; inst[3]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; input[1]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; input[2]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; input[3]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -987,6 +269,19 @@ No synchronizer chains to report.
 ; input[5]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; input[6]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; input[7]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[8]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[9]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[10]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[11]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[12]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[13]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[14]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; input[15]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ps2_clk                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ps2_data                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ie                      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clr                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk_50MHz               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -1006,14 +301,6 @@ No synchronizer chains to report.
 ; output[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
 ; output[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
 ; output[7]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[8]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[9]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.33 V              ; -0.00467 V          ; 0.226 V                              ; 0.087 V                              ; 2.91e-09 s                  ; 2.74e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.33 V             ; -0.00467 V         ; 0.226 V                             ; 0.087 V                             ; 2.91e-09 s                 ; 2.74e-09 s                 ; Yes                       ; Yes                       ;
-; output[10]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[11]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[12]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[13]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[14]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
-; output[15]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.33 V              ; -0.00467 V          ; 0.226 V                              ; 0.087 V                              ; 2.91e-09 s                  ; 2.74e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.33 V             ; -0.00467 V         ; 0.226 V                             ; 0.087 V                             ; 2.91e-09 s                 ; 2.74e-09 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.67e-09 V                   ; 2.38 V              ; -0.0485 V           ; 0.167 V                              ; 0.096 V                              ; 2.95e-10 s                  ; 2.73e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.67e-09 V                  ; 2.38 V             ; -0.0485 V          ; 0.167 V                             ; 0.096 V                             ; 2.95e-10 s                 ; 2.73e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.18e-09 V                   ; 2.38 V              ; -0.00483 V          ; 0.152 V                              ; 0.012 V                              ; 4.81e-10 s                  ; 6.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.18e-09 V                  ; 2.38 V             ; -0.00483 V         ; 0.152 V                             ; 0.012 V                             ; 4.81e-10 s                 ; 6.29e-10 s                 ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -1032,14 +319,6 @@ No synchronizer chains to report.
 ; output[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
 ; output[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
 ; output[7]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[8]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[9]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.33 V              ; -0.00265 V          ; 0.133 V                              ; 0.056 V                              ; 3.55e-09 s                  ; 3.31e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.33 V             ; -0.00265 V         ; 0.133 V                             ; 0.056 V                             ; 3.55e-09 s                 ; 3.31e-09 s                 ; Yes                       ; Yes                       ;
-; output[10]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[11]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[12]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[13]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[14]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
-; output[15]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.33 V              ; -0.00265 V          ; 0.133 V                              ; 0.056 V                              ; 3.55e-09 s                  ; 3.31e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.33 V             ; -0.00265 V         ; 0.133 V                             ; 0.056 V                             ; 3.55e-09 s                 ; 3.31e-09 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.75e-07 V                   ; 2.35 V              ; -0.0109 V           ; 0.084 V                              ; 0.027 V                              ; 4.31e-10 s                  ; 3.61e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.75e-07 V                  ; 2.35 V             ; -0.0109 V          ; 0.084 V                             ; 0.027 V                             ; 4.31e-10 s                 ; 3.61e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.15e-07 V                   ; 2.35 V              ; -0.00712 V          ; 0.093 V                              ; 0.02 V                               ; 6.21e-10 s                  ; 7.9e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 6.15e-07 V                  ; 2.35 V             ; -0.00712 V         ; 0.093 V                             ; 0.02 V                              ; 6.21e-10 s                 ; 7.9e-10 s                  ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -1058,37 +337,15 @@ No synchronizer chains to report.
 ; output[5]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
 ; output[6]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
 ; output[7]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[8]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[9]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
-; output[10]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[11]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[12]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[13]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[14]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
-; output[15]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------+
-; Setup Transfers                                                    ;
-+------------+-----------+----------+----------+----------+----------+
-; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+-----------+----------+----------+----------+----------+
-; clk_50MHz  ; clk_50MHz ; 815      ; 0        ; 0        ; 0        ;
-+------------+-----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
-
-
-+--------------------------------------------------------------------+
-; Hold Transfers                                                     ;
-+------------+-----------+----------+----------+----------+----------+
-; From Clock ; To Clock  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+-----------+----------+----------+----------+----------+
-; clk_50MHz  ; clk_50MHz ; 815      ; 0        ; 0        ; 0        ;
-+------------+-----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
 
 
 ---------------
@@ -1110,116 +367,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 16    ; 16   ;
-; Unconstrained Input Port Paths  ; 84    ; 84   ;
-; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 16    ; 16   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
-
-
-+--------------------------------------------+
-; Clock Status Summary                       ;
-+-----------+-----------+------+-------------+
-; Target    ; Clock     ; Type ; Status      ;
-+-----------+-----------+------+-------------+
-; clk_50MHz ; clk_50MHz ; Base ; Constrained ;
-+-----------+-----------+------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; clr        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ie         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[1]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[3]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; le1        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; le2        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; output[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[7]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[8]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[9]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[10]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[11]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[12]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[13]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[14]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[15]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; clr        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ie         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; input[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[1]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; inst[3]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; le1        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; le2        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; output[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[7]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[8]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[9]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[10]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[11]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[12]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[13]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[14]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; output[15]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------+
@@ -1228,7 +380,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 11 17:43:28 2019
+    Info: Processing started: Tue Nov 19 15:59:13 2019
 Info: Command: quartus_sta 287Project -c 287Project
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1237,72 +389,48 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: '287Project.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name clk_50MHz clk_50MHz
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
 Info: Analyzing Slow 1200mV 85C Model
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.831
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.831             -56.822 clk_50MHz 
-Info (332146): Worst-case hold slack is 0.610
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.610               0.000 clk_50MHz 
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -3.000
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -67.924 clk_50MHz 
+Info (332140): No Minimum Pulse Width paths to report
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.404
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.404             -50.195 clk_50MHz 
-Info (332146): Worst-case hold slack is 0.555
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.555               0.000 clk_50MHz 
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -3.000
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -67.924 clk_50MHz 
+Info (332140): No Minimum Pulse Width paths to report
 Info: Analyzing Fast 1200mV 0C Model
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Critical Warning (332148): Timing requirements not met
-    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.415
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -1.415             -19.938 clk_50MHz 
-Info (332146): Worst-case hold slack is 0.278
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.278               0.000 clk_50MHz 
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -3.000
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -50.118 clk_50MHz 
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332140): No Minimum Pulse Width paths to report
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4862 megabytes
-    Info: Processing ended: Mon Nov 11 17:43:32 2019
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4863 megabytes
+    Info: Processing ended: Tue Nov 19 15:59:18 2019
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:02
 
 
