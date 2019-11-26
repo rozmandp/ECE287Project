@@ -18,14 +18,14 @@ architecture Behavioral of decode is
  
 begin
  
-  process (clk)
+  process (clk, I_en)
   begin
     if rising_edge(clk) and I_en = '1' then
  
       O_selA <= I_dataInst(7 downto 5);
       O_selB <= I_dataInst(4 downto 2);
       O_selD <= I_dataInst(11 downto 9);
-      O_dataIMM <= I_dataInst(7 downto 0) & I_dataInst(7 downto 0);
+      O_dataIMM <= I_dataInst(7 downto 0);
       O_aluop <= I_dataInst(15 downto 12) & I_dataInst(8);
  
       case I_dataInst(15 downto 12) is
