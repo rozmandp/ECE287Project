@@ -8,10 +8,10 @@ entity ECE287project is
 						d_width	:	INTEGER := 16;    --width of each data word
 						size		:	INTEGER := 64);  --number of data words the memory can store
 		port( reset : in STD_LOGIC;
-				clk_50MHz : IN STD_LOGIC;
+				clk : IN STD_LOGIC;
 				sevenSeg1 : out std_logic_vector(6 downto 0);
 				sevenSeg2 : out  std_logic_vector(6 downto 0);
-				programStage+ : out std_logic_vector(5 downto 0);
+				programStage : out std_logic_vector(5 downto 0);
 				dataOut : out std_logic_vector(7 downto 0);
 				sevenSegAddr1 : out std_logic_vector(6 downto 0);
 				sevenSegAddr2 : out std_logic_vector(6 downto 0);
@@ -50,7 +50,9 @@ end COMPONENT decode;
 			  COMPONENT pc_unit is
    Port ( I_clk : in  STD_LOGIC;
            I_nPC : in  STD_LOGIC_VECTOR (15 downto 0);
-           pcop : in std_logic_vector(1 downto 0);
+           reset : in std_LOGIC;
+			  shouldBranch : in std_LOGIC;
+			  regWEn : in std_LOGIC;
            O_PC : out  STD_LOGIC_VECTOR (15 downto 0)
            );
 end COMPONENT pc_unit;
@@ -158,11 +160,12 @@ end COMPONENT clockDivider;
       signal in_pc: std_logic_vector(15 downto 0);
 		signal registerWriteData : std_logic_vector(7 downto 0);
 		signal display : std_logic := '0';
-		signal clk : std_logic;
+		--signal clk : std_logic;
+		signal displayData : std_LOGIC_VECTOR(7 downto 0);
 		
 		
 	  begin
-	     clockDivider1 : clockDivider PORT MAP (clk_50MHz, clk);
+	     --clockDivider1 : clockDivider PORT MAP (clk_50MHz, clk);
 		  ramAddr <= (to_integer(unsigned(dataResult))) when memoryEn = '1' else (to_integer(unsigned(PC)));
         ramWData <= X"00" & dataResult;
 		  in_pc <= X"00" & dataResult;
@@ -173,10 +176,10 @@ end COMPONENT clockDivider;
 		  cpu_alu : alu PORT MAP (dataA, dataB, aluEn, dataALUWE, aluop, dataResult, dataIMM, shouldBranch, dataWriteReg, clk, display);
 		  cpu_controlUnit : controlUnit PORT MAP( clk, reset, aluop, decodeEn, regREn, regWEn, aluEn, memoryEn, fetchEn);
 		  regFile : reg8by8 PORT MAP(clk, regREn or regWEn, registerWriteData, selA, selB, selD, dataWriteReg and regWEn, dataA, dataB);
-		  cpu_PC : pc_Unit PORT MAP(clk, in_PC,pcop, PC);
+		  cpu_PC : pc_Unit PORT MAP(clk, in_PC,reset,shouldBranch,regWEn, PC);
 		  cpu_ram : ram PORT MAP(clk, ramWE, ramAddr, ramWData, ramRData);
-		  sevenSegCon1 : to_7seg PORT MAP (dataResult(7 downto 4), display, clk, sevenSeg1);
-		  sevenSegCon2 : to_7seg PORT MAP (dataResult(3 downto 0), display, clk, sevenSeg2);
+		  sevenSegCon1 : to_7seg PORT MAP (displayData(7 downto 4), display, clk, sevenSeg1);
+		  sevenSegCon2 : to_7seg PORT MAP (displayData(3 downto 0), display, clk, sevenSeg2);
 		  sevenSegAdr1 : to_7seg PORT MAP (PC(15 downto 12), '1', clk, sevenSegAddr1);
 		  sevenSegAdr2 : to_7seg PORT MAP (PC(11 downto 8), '1', clk, sevenSegAddr2);
 		  sevenSegAdr3 : to_7seg PORT MAP (PC(7 downto 4), '1', clk, sevenSegAddr3);
@@ -189,8 +192,5 @@ end COMPONENT clockDivider;
 		  programStage(0) <= regWEn;
 		  dataOut <= dataResult;
 		  opcodeOut <= aluop;
-		  pcop <= PCU_OP_RESET when reset = '1' else
-        PCU_OP_ASSIGN when shouldBranch = '1' and regWEn = '1' else
-        PCU_OP_INC when shouldBranch = '0' and regWEn = '1' else
-        PCU_OP_NOP;
+		  displayData <= dataResult when display = '1' and aluop(4 downto 1) = opcode_Display;
 	  end behavior;

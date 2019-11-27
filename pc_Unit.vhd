@@ -6,7 +6,9 @@ use ieee.numeric_std.all;
 entity pc_unit is
     Port ( I_clk : in  STD_LOGIC;
            I_nPC : in  STD_LOGIC_VECTOR (15 downto 0);
-           pcop : in std_logic_vector(1 downto 0);
+           reset : in std_LOGIC;
+			  shouldBranch : in std_LOGIC;
+			  regWEn : in std_LOGIC;
            O_PC : out  STD_LOGIC_VECTOR (15 downto 0)
            );
 end pc_unit;
@@ -24,16 +26,14 @@ begin
   
     if rising_edge(I_clk) then 
 	 
-      case pcop is
-        when PCU_OP_NOP =>   -- NOP, keep PC the same/halt
-        when PCU_OP_INC =>   -- increment
+      if reset = '1' then
+		current_pc <= X"0000";
+       elsif shouldBranch = '1' and regWEn = '1' then
+		 current_pc <= I_nPC;
+		 elsif shouldBranch = '0' and regWEn = '1' then
           current_pc <= std_logic_vector(unsigned(current_pc) + 1);
-        when PCU_OP_ASSIGN =>    -- set from external input
-          current_pc <= I_nPC;
-        when PCU_OP_RESET =>     -- Reset
-          current_pc <= X"0000";
-        when others =>
-      end case;
+       else
+      end if;
     end if;
   end process;
  
