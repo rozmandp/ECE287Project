@@ -24,7 +24,7 @@ architecture behavior of controlUnit is
 			  begin
 			  if reset = '1' then
         currState <= Fetch;
-			  elsif rising_edge(clk) then
+			  else
             currState <= nextState;
 				end if;
 				if  rising_edge(clk) then

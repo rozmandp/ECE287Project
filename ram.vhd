@@ -56,27 +56,19 @@ ARCHITECTURE logic OF ram IS
 	
 	TYPE memory IS ARRAY(0 to size-1) OF STD_LOGIC_VECTOR(d_width-1 DOWNTO 0);  --data type for memory
 	SIGNAL ram			:	memory := (
+	opcode_jump & "000" & "0" & X"01",
 	opcode_load & "001" & '1' & X"0A",
-	X"0000",
 	opcode_load & "010" & '1' & X"0C",
-	X"0000",
 	opcode_load & "011" & '1' & "00000000",
-	X"0000",
 	opcode_load & "100" & '1' & "00000000",
-	X"0000",
-	opcode_load & "110" & '1' & "00001010",
-	X"0000",
+	opcode_load & "110" & '1' & "00000101",
 	opcode_add & "100" & '0' & "001" & "100" & "00",
-	X"0000",
 	opcode_increment & "011" & '1' & "011" & "00000",
-	X"0000",
 	opcode_cmp & "101" & '0' &  "011" & "010" & "00",
-	X"0000",
 	opcode_condJump & "000" & '1' & "101" & "110" & "10",
-	X"0000",
 	opcode_display & "000" & '0' & "100" & "00000",
-	X"0000",
-	opcode_jump & "000" & "0" & X"14",
+	--opcode_jump & "000" & "0" & X"00",
+	opcode_jump & "000" & "0" & X"0B",
 	others => X"0000");
 	SIGNAL addr_int	:	INTEGER RANGE 0 TO size-1;                                 --internal address register
 BEGIN
