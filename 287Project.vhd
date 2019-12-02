@@ -8,7 +8,7 @@ entity ECE287project is
 						d_width	:	INTEGER := 16;    --width of each data word
 						size		:	INTEGER := 64);  --number of data words the memory can store
 		port( reset : in STD_LOGIC;
-				clk : IN STD_LOGIC;
+				clk_50MHz : IN STD_LOGIC;
 				sevenSeg1 : out std_logic_vector(6 downto 0);
 				sevenSeg2 : out  std_logic_vector(6 downto 0);
 				programStage : out std_logic_vector(5 downto 0);
@@ -161,12 +161,12 @@ end COMPONENT clockDivider;
       signal in_pc: std_logic_vector(15 downto 0);
 		signal registerWriteData : std_logic_vector(7 downto 0);
 		signal display : std_logic := '0';
-		--signal clk : std_logic;
+		signal clk : std_logic;
 		signal displayData : std_LOGIC_VECTOR(7 downto 0);
 		
 		
 	  begin
-	     --clockDivider1 : clockDivider PORT MAP (clk_50MHz, clk);
+	     clockDivider1 : clockDivider PORT MAP (clk_50MHz, clk);
 		  ramAddr <= (to_integer(unsigned(dataResult))) when memoryEn = '1' else (to_integer(unsigned(PC)));
         ramWData <= X"00" & dataResult;
 		  in_pc <= X"00" & dataResult;
